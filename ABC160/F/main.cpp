@@ -10,7 +10,7 @@ int main() {
     /*
      * 全方位木DP
      * */
-    
+
     return 0;
 }
 
