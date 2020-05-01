@@ -160,6 +160,7 @@ dp[i][smaller]  i: i桁目,  smaller: Kと一致するか否かの「未満フ�
  * ⓵初期条件を代入する  
  * ⓶逐次代入   
 
+https://qiita.com/pinokions009/items/1e98252718eeeeb5c9ab
 
 ### 【 グラフ 】
 Nを頂点数 Mを辺数 便宜上N<=M として考える  
