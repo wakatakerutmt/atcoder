@@ -1,5 +1,11 @@
 基本的な知識や参考になるリンクなど
 
+| Method | endpoint | リクエストの実行例(idは各々変更) |
+| GET | /posts | $curl --header "Content-type: application/json"  --request GET http://localhost:9000/posts |
+| POST | /posts/create | $ curl  --header "Content-type: application/json"  --request POST --data '{"user_id":"11111111-1111-1111-1111-111111111111", "text":"create post"}'  http://localhost:9000/posts/create  | 
+| GET | /posts/:post_id/comments  | $curl  --header "Content-type: application/json" --request GET http://localhost:9000/posts/8ee5d5d2-a10e-4242-bfec-bfb8c9047cee/comments | 
+| POST | /posts/:post_id/comments/create | $curl  --header "Content-type: application/json" --request POST --data '{"user_id":"11111111-1111-1111-1111-111111111111", "text":"suixxx"}' http://localhost:9000/posts/8ee5d5d2-a10e-4242-bfec-bfb8c9047cee/comments/create | 
+
 ### 上限値に対するオーダーの考える目安
 
 N=10～15 (bit演算でO( (N^2) * (2^N))ぐらいまで許容)   
