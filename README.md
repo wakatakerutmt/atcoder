@@ -1,19 +1,6 @@
 基本的な知識や参考になるリンクなど
 
-- [x] GET /posts を実行すると、初期状態では空配列が返ってくること
-- [x] POST /posts/create を正常なリクエストパラメータとともに実行すると、OKが返ってくること
-- [x] GET /posts を実行すると、先程作ったpostが返ってくること。この時、comment_countは0であること
-- [x] GET /posts/:post_id/comments を実行すると、空配列が返ってくること ※post_idは先程作ったpostのidにすること
-- [x] POST /posts/:post_id/comments/create を正常なリクエストパラメータとともに実行すると、OKが返ってくること ※post_idは先程作ったpostのidにすること
-- [x] GET /posts/:post_id/comments を実行すると、先程作ったコメント情報が返ってくること ※post_idは先程作ったpostのidにすること
-- [ ] GET /posts を実行すると、先程作ったpostが返ってくること。つまり2件。この時、親となる投稿のcomment_countは1であること
-- [x] POST /posts/create textパラメーターの文字列長が0の状態で実行すると、400番のHTTPエラーとともに 空文字である旨のエラーメッセージが返ること
-- [x] POST /posts/create textパラメーターの文字列長が101の状態で実行すると、400番のHTTPエラーとともに 上限文字数を超えた旨のエラーメッセージが返ること
-- [x] POST /posts/create user_idパラメータの値を存在しないidの状態で実行すると、400番のHTTPエラーとともに ユーザーが存在しない旨のエラーメッセージが返ること
-- [x] POST /posts/:post_id/comments/create textパラメーターの文字列長が0の状態で実行すると、400番のHTTPエラーとともに 空文字である旨のエラーメッセージが返ること
-- [x] POST /posts/:post_id/comments/create textパラメーターの文字列長が101の状態で実行すると、400番のHTTPエラーとともに 上限文字数を超えた旨のエラーメッセージが返ること
-- [x] POST /posts/:post_id/comments/create user_idパラメータの値を存在しないidの状態で実行すると、400番のHTTPエラーとともに ユーザーが存在しない旨のエラーメッセージが返ること
-- [x] POST /posts/:post_id/comments/create post_idパラメータの値を存在しないidの状態で実行すると、400番のHTTPエラーとともに 投稿が存在しない旨のエラーメッセージが返ること
+
 
 ### 上限値に対するオーダーの考える目安
 
